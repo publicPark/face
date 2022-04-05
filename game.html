@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<html>
+	<head>
+		<title>얼굴파크에 오신 것을 환영합니다!</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body class="homepage">
+		<!-- Header -->
+			<div id="header-wrapper">
+				<header id="header" class="container">
+				
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index1.html"><img src="jysource/facepark.png" height="50px"></a></h1>
+							<span>by 지윤파크 </span>
+						</div>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index1.html">Home</a></li>
+								<li><a href="rule.html">Rule</a></li>
+								<li><a href="game.html"><font color="red">Play</font></a></li>
+								<li><a href="contact.html">About</a></li>
+
+							</ul>
+						</nav>
+					
+				</header>
+			</div>
+			
+			<!-- Main -->
+			<div id="main-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="4u">
+						</div>
+						<div class="8u important(collapse)">
+
+							<!-- Content -->
+							<p>얼굴파크 - 얼굴의 모험</p>
+								<!---- 여기부터 게임 화면 입니다 ------>
+			
+	<div id="fb-root"></div>
+	<div style="text-align: center;">
+
+	<script>
+	// Issue a warning if trying to preview an exported project on disk.
+	(function(){
+		// Check for running exported on file protocol
+		if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+		}
+	})();
+	</script>
+	<style>
+		
+		#c2canvas{
+			border: 8px solid gray;
+		}
+	</style>
+
+		<!-- The canvas must be inside a div called c2canvasdiv -->
+		<div id="c2canvasdiv" style="margin: 0 auto; width: 854px; height: 480px;">
+		
+			<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+			ID the runtime looks for in the jQuery ready event (above). -->
+			<canvas id="c2canvas" width="854" height="480">
+				<!-- This text is displayed if the visitor's browser does not support HTML5.
+				You can change it, but it is a good idea to link to a description of a browser
+				and provide some links to download some popular HTML5-compatible browsers. -->
+				Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+				<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+				<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+				<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+				<a href="http://www.apple.com/safari/download/">Apple Safari</a><br/>
+				<a href="http://www.google.com/chromeframe">Google Chrome Frame for Internet Explorer</a><br/>
+			</canvas>
+			
+		</div>
+
+        <br />
+		
+
+	</div>
+	
+	<!-- Pages load faster with scripts at the bottom -->
+	
+	<!-- Construct 2 exported games require jQuery. -->
+	<script src="jquery-2.1.1.min.js"></script>
+
+
+	
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+	<script src="c2runtime.js"></script>
+
+    <script>
+		// Size the canvas to fill the browser viewport.
+		jQuery(window).resize(function() {
+			cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+		});
+		
+		// Start the Construct 2 project running on window load.
+		jQuery(document).ready(function ()
+		{
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		});
+		
+		// Pause and resume on page becoming visible/invisible
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+    </script>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+								<div class="12u">
+									<div id="copyright">
+										<ul class="menu">
+											<li>&copy; 이사이트는 내꺼 </li><li>제 이름은 박지윤입니다</a></li>
+										</ul>
+									</div>
+								</div>
+					</div>
+				</footer>
+			</div>
+		
+	</body>
+</html>
